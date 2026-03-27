@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /daleska/
+
+Sitemap: https://personalportfolio-nine-peach.vercel.app/sitemap.xml
+
+Host: https://personalportfolio-nine-peach.vercel.app

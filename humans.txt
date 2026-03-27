@@ -1,0 +1,23 @@
+# humanstxt.org
+# This is a human.
+
+## TEAM
+
+Developer: Ermeson de Oliveira Alves
+Contact: ermesonoliveira2000@gmail.com
+From: Brazil
+
+## SITE
+
+Last build: 2026-03-27
+Language: Portuguese (pt-BR)
+Technology: HTML, CSS, JavaScript
+
+## SOCIAL
+
+LinkedIn: https://linkedin.com/in/ermeson-oliveira
+GitHub: https://github.com/ErmesonOAlves
+
+## THANKS
+
+Thanks for visiting my portfolio!
