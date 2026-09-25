@@ -121,24 +121,30 @@ p {
     color: var(--text-main);
 }
 
+.nav-link.active {
+    color: var(--text-main);
+}
+
 .nav-cta {
-    background: var(--text-main);
-    color: var(--bg);
-    padding: 0.5rem 1.25rem;
-    border-radius: 100px;
+    text-decoration: none;
+    color: var(--text-dim);
     font-size: 0.875rem;
-    font-weight: 700;
-    transition: transform 0.4s var(--ease-premium);
-    will-change: transform;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: color 0.3s var(--ease-premium);
+}
+
+.nav-cta:hover {
+    color: var(--text-main);
+}
+
+.nav-cta.active {
+    color: var(--text-main);
 }
 
 .magnetic {
     transition: transform 0.4s var(--ease-premium);
     will-change: transform;
-}
-
-.nav-cta:hover {
-    transform: scale(1.05);
 }
 
 .hero-badge {

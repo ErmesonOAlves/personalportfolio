@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="google-site-verification" content="google27c0c4044396f35f.html">
+
     <!-- SEO Essentials -->
     <title>Ermeson de Oliveira Alves | FullStack Developer</title>
     <meta name="description" content="Ermeson de Oliveira Alves - FullStack Developer especializado em React, Node.js, Next.js e TypeScript. Desenvolvedor em evolução, criando interfaces modernas e soluções tecnológicas inovadoras.">
@@ -32,6 +33,7 @@
     <meta property="og:image" content="https://personalportfolio-nine-peach.vercel.app/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ermeson de Oliveira Alves - FullStack Developer">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Portfolio Ermeson de Oliveira Alves">
     
@@ -42,22 +44,46 @@
     <meta name="twitter:title" content="Ermeson de Oliveira Alves | FullStack Developer">
     <meta name="twitter:description" content="Desenvolvedor FullStack especializado em React, Node.js e Next.js.">
     <meta name="twitter:image" content="https://personalportfolio-nine-peach.vercel.app/og-image.jpg">
+    <meta name="twitter:image:alt" content="Ermeson de Oliveira Alves - FullStack Developer">
     
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ermeson de Oliveira Alves",
-      "url": "https://personalportfolio-nine-peach.vercel.app/",
-      "jobTitle": "FullStack Developer",
-      "description": "Desenvolvedor FullStack especializado em React, Node.js, Next.js e TypeScript",
-      "sameAs": [
-        "https://linkedin.com/in/ermeson-oliveira",
-        "https://github.com/ErmesonOAlves"
-      ],
-      "knowsAbout": ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Tailwind CSS", "PostgreSQL", "MongoDB", "AWS", "Docker", "Express", "Framer Motion"],
-      "email": "ermesonoliveira2000@gmail.com"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://personalportfolio-nine-peach.vercel.app/#pessoa",
+          "name": "Ermeson de Oliveira Alves",
+          "alternateName": "Ermeson Alves",
+          "url": "https://personalportfolio-nine-peach.vercel.app/",
+          "image": "https://personalportfolio-nine-peach.vercel.app/og-image.jpg",
+          "jobTitle": "FullStack Developer",
+          "description": "Desenvolvedor FullStack especializado em React, Node.js, Next.js e TypeScript",
+          "sameAs": [
+            "https://linkedin.com/in/ermeson-oliveira",
+            "https://github.com/ErmesonOAlves"
+          ],
+          "knowsAbout": ["JavaScript", "TypeScript", "React", "Node.js", "Next.js", "Tailwind CSS", "PostgreSQL", "MongoDB", "AWS", "Docker", "Express", "Framer Motion"],
+          "knowsLanguage": ["pt-BR", "en"],
+          "email": "ermesonoliveira2000@gmail.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://personalportfolio-nine-peach.vercel.app/#website",
+          "url": "https://personalportfolio-nine-peach.vercel.app/",
+          "name": "Ermeson de Oliveira Alves - Portfólio",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://personalportfolio-nine-peach.vercel.app/#pessoa" }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://personalportfolio-nine-peach.vercel.app/#perfil",
+          "url": "https://personalportfolio-nine-peach.vercel.app/",
+          "inLanguage": "pt-BR",
+          "mainEntity": { "@id": "https://personalportfolio-nine-peach.vercel.app/#pessoa" }
+        }
+      ]
     }
     </script>
     
@@ -107,9 +133,8 @@
                 <div class="flex-responsive mt-24">
                     <a href="#projects" class="nav-cta" style="padding: 1rem 2.5rem; font-size: 1.125rem;">Ver
                         Projetos</a>
+                    </div>
                 </div>
-            </div>
-            </div>
         </section>
 
 
@@ -117,9 +142,11 @@
             <div class="bento-grid">
                 <div class="bento-item bento-item-8 reveal">
                     <h2 class="text-editorial mb-8">Transformando curiosidade em código.</h2>
-                    <p>Atualmente focado em dominar o ecossistema JavaScript e criar projetos que resolvem problemas
-                        reais. Busco minha primeira oportunidade como desenvolvedor, onde possa contribuir e evoluir
-                        constantemente junto a um time de tecnologia.</p>
+                    <p>Sou <strong>Ermeson de Oliveira Alves</strong>, desenvolvedor FullStack com foco no ecossistema
+                        JavaScript. Desenvolvo interfaces modernas com React e Next.js e gosto de resolver problemas
+                        reais, do layout ao banco de dados, mantendo o código simples e útil.</p>
+                    <p class="mt-8">Atualmente busco minha primeira oportunidade como desenvolvedor, onde possa
+                        contribuir e evoluir constantemente junto a um time de tecnologia.</p>
                 </div>
                 <div class="bento-item bento-item-4 reveal">
                     <div class="premium-card h-full flex flex-col justify-between p-8">
@@ -148,7 +175,9 @@
 
 
         <section id="skills" class="py-luxury">
-            <h2 class="text-dim text-xs font-bold uppercase tracking-widest mb-12">Tech Stack</h2>
+            <h2 class="text-dim text-xs font-bold uppercase tracking-widest mb-4">Tech Stack</h2>
+            <p class="mb-12">Trabalho principalmente com o ecossistema JavaScript, do front ao back, para construir
+                aplicações rápidas, responsivas e prontas para produção.</p>
             <div class="bento-grid">
                 <div class="bento-item bento-item-4 premium-card reveal">
                     <i class="ph ph-lightning text-3xl text-accent mb-4"></i>
@@ -191,16 +220,18 @@
                     <span class="text-xs font-bold text-accent uppercase tracking-widest">Fintech</span>
                     <h3 class="text-2xl mt-2 mb-4">Subscription Tracker</h3>
                     <p class="text-sm text-dim">Sistema completo de monitoramento e gestão de assinaturas recorrentes.
-                    </p>
+                        Feito para responder uma dúvida simples: quanto sai do bolso todo mês com serviços
+                        recorrentes?</p>
                 </div>
 
                 <a href="https://final-project-digital-store.vercel.app/" target="_blank" rel="noopener" class="bento-item bento-item-6 premium-card reveal">
                     <div class="project-image bg-zinc-900 flex items-center justify-center">
-                        <img src="assets/digitalstore.png" alt="Digital Store - Projeto de loja online de tênis desenvolvida em React.js" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="assets/digitalstore.png" width="1919" height="881" loading="lazy" decoding="async" alt="Digital Store - Projeto de loja online de tênis desenvolvida em React.js" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <span class="text-xs font-bold text-accent uppercase tracking-widest">Frontend</span>
                     <h3 class="text-2xl mt-2 mb-4">Digital Store</h3>
-                    <p class="text-sm text-dim">Loja Online de tênis, feita em React.js</p>
+                    <p class="text-sm text-dim">E-commerce de tênis desenvolvido em React.js, com catálogo de produtos,
+                        carrinho de compras e layout responsivo, focado na experiência de compra.</p>
                 </a>
             </div>
         </section>
@@ -213,10 +244,10 @@
                     <a href="mailto:ermesonoliveira2000@gmail.com" class="social-icon-link">
                         <i class="ph-fill ph-envelope-simple"></i>
                     </a>
-                    <a href="https://linkedin.com/in/ermeson-oliveira" target="_blank" rel="noopener" class="social-icon-link">
+                    <a href="https://linkedin.com/in/ermeson-oliveira" target="_blank" rel="me noopener" class="social-icon-link">
                         <i class="ph-fill ph-linkedin-logo"></i>
                     </a>
-                    <a href="https://github.com/ErmesonOAlves" target="_blank" rel="noopener" class="social-icon-link">
+                    <a href="https://github.com/ErmesonOAlves" target="_blank" rel="me noopener" class="social-icon-link">
                         <i class="ph-fill ph-github-logo"></i>
                     </a>
                 </div>

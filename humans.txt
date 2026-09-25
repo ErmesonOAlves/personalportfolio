@@ -9,7 +9,7 @@ From: Brazil
 
 ## SITE
 
-Last build: 2026-03-27
+Last build: 2026-09-24
 Language: Portuguese (pt-BR)
 Technology: HTML, CSS, JavaScript
 

@@ -1,43 +1,44 @@
-# Imagens OG Image Necessárias
+# Checklist de SEO — Pós-deploy
 
-Para completar o SEO do seu portfólio, você precisa criar as seguintes imagens:
+Arquivos já no repositório: meta de verificação do Google, `og-image.jpg`, favicons,
+`robots.txt`, `sitemap.xml` e dados estruturados (Person + WebSite + ProfilePage).
 
-## 1. OG Image (og-image.jpg)
-- **Tamanho:** 1200x630px
-- **Formato:** JPG ou PNG
-- **Local:** raiz do projeto como `og-image.jpg`
+## 1. Google Search Console (obrigatório)
 
-**Conteúdo recomendado:**
-- Seu nome: "Ermeson de Oliveira Alves"
-- Subtítulo: "FullStack Developer"
-- Fundo escuro (#09090b) combinando com o site
-- Logo ou inicial
+1. Acesse https://search.google.com/search-console
+2. **Adicionar propriedade** → escolha a opção **Arquivo HTML** (o arquivo
+   `google27c0c4044396f35f.html` já está publicado na raiz do site)
+   - Alternativa, se escolher **Tag HTML**: use o conteúdo
+     `google27c0c4044396f35f.html` (também já está no `<head>` do index.html)
+3. Clique em **Verificar**
+4. Depois de verificar, em **Sitemaps** → envie `sitemap.xml` → **Enviar**
+5. Em **Inspeção de URL** → digite `https://personalportfolio-nine-peach.vercel.app/`
+   → **Solicitar indexação**
 
-**Ferramentas gratuitas para criar:**
-- canva.com (template: "Social Media Post")
-- socialstudio.radiantthemes.com
-- pixelied.com
+## 2. Bing / DuckDuckGo (alimenta também o Yahoo e o DuckDuckGo)
 
-## 2. Favicon
-O site já está configurado para usar favicon. Para funcionar, adicione na raiz do projeto:
-- `favicon.ico` (32x32px)
-- `favicon-32x32.png`
-- `favicon-16x16.png`
-- `apple-touch-icon.png` (180x180px)
+1. Acesse https://www.bing.com/webmasters
+2. Adicione a propriedade (dá para importar do Google Search Console)
+3. Envie o sitemap `https://personalportfolio-nine-peach.vercel.app/sitemap.xml`
+4. Peça indexação da URL principal
 
-**Gerador de favicon:** favicon.io ou realfavicongenerator.net
+## 3. Sinais de entidade (backlinks gratuitos)
 
----
+- **GitHub**: torne o repositório público e coloque o link do portfólio no
+  README; adicione `https://personalportfolio-nine-peach.vercel.app` no campo
+  *website* do perfil (github.com → Edit profile)
+- **LinkedIn**: adicione o link do portfólio no campo *Website* do perfil
+- Mantenha o nome "Ermeson de Oliveira Alves" igual no site, GitHub e LinkedIn
 
-## Após criar as imagens:
+## 4. Validações (depois do deploy)
 
-1. Faça o commit das alterações
-2. O Vercel fará o deploy automaticamente
-3. Teste em: https://developers.facebook.com/tools/debug/
-4. Teste em: https://cards-dev.twitter.com/validator
-5. Teste em: https://search.google.com/search-console
+- Rich Results Test: https://search.google.com/test/rich-results
+- Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/
+- PageSpeed Insights: https://pagespeed.web.dev/
 
-## Verifique a indexação:
-1. Acesse Google Search Console
-2. Adicione seu site
-3. Solicite indexação
+## 5. Acompanhamento
+
+- No Search Console, aba **Páginas indexadas**: deve sair de "Não indexada"
+  em 1 a 14 dias após a solicitação
+- Checagem manual: buscar `site:personalportfolio-nine-peach.vercel.app`
+  e o nome "ermeson de oliveira alves" no Google
